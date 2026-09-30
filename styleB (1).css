@@ -1,0 +1,36 @@
+/* Style B - Özcan Öztürk */
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Tahoma;
+  font-size: 40px;
+
+  /* flexbox: boxes in one row, no wrapping */
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #eeeff2;
+  border-left: 10px dotted #D0D0FF;
+  flex: none;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: yellow;
+  color: goldenrod;
+}
+
+/* last box stays at the bottom right of the window */
+.last {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
